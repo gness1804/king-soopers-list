@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--If I want to keep the page from showing up in search engine results, use the "nosearch" snippet here. -->
+    <meta name="viewport" content="width=device-width"/> <!--To enable media queries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--Basic jQuery CDN -->
+    <script src="script.js"></script> <!-- for JavaScript; change file name as needed-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" style="text/css" href="style.css"/> <!-- for CSS; change file name as needed -->
+    <title>King Sooper Grocery List</title>
+  </head>
+  <body>
+    <h1><a href="https://www.kingsoopers.com/" target="_blank">King Soopers</a> Grocery List</h1>
+    <p class="description">For <a href="https://www.google.com/maps/place/7984+W+Alameda+Ave,+Lakewood,+CO+80226/@39.7095013,-105.087428,17z/data=!3m1!4b1!4m5!3m4!1s0x876b8123fc17bf2f:0x8777e91f4e4d80a8!8m2!3d39.7095013!4d-105.0852393"  target="blank">King Soopers, 7984 West Alameda Avenue, Lakewood, CO 80226</a></p>
+    <table>
+      <tr>
+        <th>Item Needed</th>
+        <th class="toRight">Aisle</th>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="name" id="grocery" placeholder="" list="groceries">
+          <datalist id="groceries">
+            <option value="apples"></option>
+     				<option value="bagels"></option>
+     				<option value="body wash"></option>
+     				<option value="bread"></option>
+     				<option value="chicken"></option>
+     				<option value="egg rolls"></option>
+     				<option value="frozen dinners"></option>
+     				<option value="frozen lunches"></option>
+     				<option value="green pepper"></option>
+     				<option value="ground beef"></option>
+     				<option value="lunchmeat"></option>
+     				<option value="magnums"></option>
+     				<option value="olives"></option>
+     				<option value="pasta"></option>
+     				<option value="pasta sauce"></option>
+     				<option value="paper towels"></option>
+     				<option value="peanuts"></option>
+     				<option value="rice"></option>
+     				<option value="salsa"></option>
+     				<option value="soda"></option>
+     				<option value="soup"></option>
+            <option value="sushi"></option>
+     				<option value="taco seasoning"></option>
+     				<option value="tortillas"></option>
+     				<option value="wine"></option>
+          </datalist>
+        </td>
+        <td>
+          <input type="text" name="name" value="" id="aisle">
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Category</th>
+      </tr>
+      <tr>
+        <td>
+          <select onchange="assignAisle()" id="category">
+            <option selected="selected">Please choose a category.</option>
+     				<option>Baking Items</option>
+     				<option>Breads/Bagels</option>
+            <option>Canned Beans</option>
+     				<option>Canned Fish</option>
+            <option>Canned Tomatoes</option>
+     				<option>Chips</option>
+            <option>Cooking Wines</option>
+     				<option>Condiments</option>
+    				<option>Detergent (Dish and Laundry)</option>
+            <option>Ethnic Foods</option>
+    				<option>Frozen Lunches/Dinners</option>
+    				<option>Frozen Veggies</option>
+    				<option>Honey</option>
+     				<option>Household Goods (Paper Towels, TP, etc)</option>
+            <option>Ice Cream</option>
+            <option>Meat</option>
+            <option>Medicines (OTC)</option>
+     			  <option>Nuts</option>
+     				<option>Office Supplies</option>
+     				<option>Olives</option>
+     				<option>Pasta/Pasta Sauce</option>
+     				<option>Peanut Butter and Jelly</option>
+     				<option>Personal Care and Grooming</option>
+            <option>Pest Control</option>
+     				<option>Produce</option>
+     				<option>Rice</option>
+     				<option>Seafood (Fresh or Frozen)</option>
+            <option>Soda</option>
+     				<option>Soups</option>
+     				<option>Spices</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button onclick="transfer()">Add Item</button>
+    <div id="place">
+      <!--Where the output goes -->
+    </div>
+  </body>
+</html>
