@@ -1,0 +1,5 @@
+King Soopers Grocery List
+
+This is a fairly simple grocery list that I've put together that populates aisle/section numbers/names when a user enters in an item. The user chooses a category and one they select "Add Item", the site creates a new div with the item name and relevant info that can then be copied into Google Keep, Sheets, etc. This is still in a fairly early form; I'd like to expand it by adding more items and by exporting data to Google Sheets. The purpose of this project is to give users more control over online shopping lists while also maximizing functionality, as I've found that the online grocery apps I've worked with are too restrictive (for instance, they often make it hard to add an item that isn't in their database, such as a custom name like "Frozen Lunches" or "Birthday Cake for Aunt Lilly.") My goal is to create an app/site that avoids this type of straitjacket while making it easy for users to create targeted lists (presumably using supermarket APIs instead of the item-by-item approach that I took the build this site.)
+
+Thanks for viewing my site! 
