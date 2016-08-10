@@ -61,21 +61,4 @@ function assignAisle() {
 	document.getElementById("aisle").value = y;
 }
 
-function transfer () {
-	var para = document.createElement("TR");
-	var grocery = document.getElementById("grocery").value;
-	var t = document.createTextNode(grocery);
-	para.appendChild(t);
-	var p = document.getElementById("place");
-	p.appendChild(para);
-
-	var para2 = document.createElement("TR");
-	var aisle = document.getElementById("aisle").value;
-	var t2 = document.createTextNode("Aisle : " + aisle);
-	para2.appendChild(t2);
-	p.appendChild(para2);
-
-	document.getElementById("grocery").value = "";
-	document.getElementById("aisle").value = "";
-	document.getElementById("category").value = "Please choose a category.";
-};
+//Google Apps script needed here, if possible!
