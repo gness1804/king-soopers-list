@@ -40,6 +40,16 @@ table {
   margin-left: 90px
 }
 
+@media screen and (max-width: 500px) { /* for smartphones */
+  table {display: block; margin-left: auto; margin-right: auto;}
+  select {border: 1px solid black;}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) { /* for tablets */
+  select {border: 1px solid black;}
+  element2 {}
+}
+
 input, select {
   margin: 5px;
 }
@@ -52,10 +62,31 @@ input[type="text"]:hover {
   background-color: rgb(245, 202, 247);
 }
 
+button {
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(240, 235, 225);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+button:focus {
+  background-color: rgb(142, 131, 117)
+}
+
 #place {
   position: absolute;
-  top: 250px;
-  max-height: 10px;
+  top: 450px;
+  left: 200px;
+  max-height: 600px;
+  background: linear-gradient(to bottom, rgb(232, 240, 228), rgb(197, 205, 186));
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 #place tr {
